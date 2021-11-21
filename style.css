@@ -12,7 +12,6 @@ body{
 }
 
 .wrap{
-    
     font-family: 'Roboto', sans-serif;
     display: flex;
     max-width: 960px;
@@ -23,7 +22,7 @@ body{
 /*left content*/
 .profile{
     max-width: 35%;
-    background-color: #747272;
+    background-color: #39383a;
     color: #e3dcd0;
     font-size: 13px;
 }
@@ -40,10 +39,10 @@ body{
     padding:50px 30px 70px;
 }
 .heading{
-    margin: 0;
     padding-bottom: 16px;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 .heading-light{
     color: white;
@@ -51,6 +50,7 @@ body{
 }
 .profile-text{
     line-height: 24.19px;
+    margin-bottom: 30px;
 }
 .contacts{
     margin-bottom: 50px;
@@ -74,16 +74,16 @@ address{
     font-style: normal;
 }
 .fas{
-    margin-right: 7px;
+    margin-right: 9px;
 }
 
-/*information languages*/
-.languages{
+/*information skills*/
+.skills{
     display: flex;
     flex-wrap: wrap;
     padding-top: 39px;
 }
-.language{
+.skill{
     width: 100px;
     height: 100px;
     border:6px solid #5c5c5c;
@@ -93,15 +93,16 @@ address{
     align-items: center;
     flex-direction: column; 
     margin: 0 30px 30px 0;
+    line-height: 1.5;
 }
-.language:nth-child(3){
+.skill:nth-child(3){
     margin-bottom: 0;
 }
-.language-text{
+.skill-text{
     text-transform: uppercase;
     font-size: 11px;
 }
-.language-persent{
+.skill-persent{
     font-size: 15px;
     font-weight: 600;
 }
@@ -177,21 +178,21 @@ address{
 
 .about{
     text-align: center;
-    border-bottom: 1px solid #ededed;
     padding-bottom: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .name{
     font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 7.75px;
+    letter-spacing: 5px;
+    font-weight: 700;
 }
 .position{
     display: block;
     font-size: 16px;
     color:#bbb9b6;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .about-adress{
@@ -208,7 +209,6 @@ address{
 }
 .heading_dark{
     border-bottom: 1px solid #ededed;
-    font-size: 16px;
     font-weight: bold;
     margin-bottom: 37px;
 }
@@ -220,10 +220,8 @@ address{
 }
 .list-item{
     position: relative;
-    padding-left: 40px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 2px dashed #e9e9e9;
+    padding: 0 0 20px 30px;
+    margin-bottom: 20px;
 }
 .list-item::before{
     content: '';
@@ -236,43 +234,20 @@ address{
     background-color:#000;
 }
 .list-item_title{
-    font-size: 11px;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 .list-item_date{
-    font-size: 10px;
     text-transform: uppercase;
-}
-.list-item_non-border{
-    border:none;
-}
-.heading_skills{
-    margin-bottom: 48px;
-}
-
-.skills-list{
-    list-style: none;
-    padding-left: 0;
-}
-.skills-list_item{
-    margin-bottom: 30px;
     font-size: 11px;
-    display: flex;
-    justify-content: space-between;
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.level{
-    width: 200px;
-    height: 8px;
-    border: 1px solid #585757;
-    position: relative;
-}
-.level::before{
-    content:'';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background: #39383a;
+
+.quality{
+    display: block;
 }
