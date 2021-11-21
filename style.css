@@ -142,17 +142,23 @@ address{
     display: flex;
     justify-content: center;
     margin-bottom: 38px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    color: white;
 }
 .logo-img{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border: 1px solid #000;
+    background-color: #39383a;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
     font-weight: 600;
+    transition: transform 0.2s;
+    transform: rotate(20deg);
 }
 .logo-lines{
     display: flex;
