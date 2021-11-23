@@ -160,7 +160,6 @@ address{
     font-size: 36px;
     font-weight: 600;
     transition: transform 0.2s;
-    transform: rotate(20deg);
 }
 .logo-lines{
     display: flex;
