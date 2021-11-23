@@ -275,7 +275,37 @@ address{
         margin:auto;
         border-radius:50%;
     }
-    
+    .profile-text, .heading {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .contacts {
+        font-size: 20px;
+    }
+    .contacts-title{
+        padding-bottom: 10px;
+    }
+    .lines{
+        display:none;
+    }
+    .resume{
+        margin: 0;
+    }
+    .position, .about-adress {
+        font-size: 20px;
+    }
+    .about-contacts, .list-item_title, {
+        font-size: 18px;
+    }
+
+    .list-item_date{
+        font-size: 13px;
+    }
+    .list-item_text {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 768px){
