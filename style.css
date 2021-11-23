@@ -82,6 +82,7 @@ address{
     display: flex;
     flex-wrap: wrap;
     padding-top: 39px;
+    transform-style: preserve-3d;
 }
 .skill{
     width: 100px;
@@ -94,6 +95,7 @@ address{
     flex-direction: column; 
     margin: 0 30px 30px 0;
     line-height: 1.5;
+    transition: 0.2s;
 }
 .skill:nth-child(3){
     margin-bottom: 0;
@@ -256,4 +258,35 @@ address{
 
 .quality{
     display: block;
+}
+
+
+
+@media (max-width: 992px){
+    .wrap{
+        flex-direction:column;
+    }
+    .profile{
+        max-width:100%;
+    }
+    .profile-photo{
+        width:400px;
+        height: 400px;
+        margin:auto;
+        border-radius:50%;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    
+}
+@media (max-width: 480px){
+
+    
+}
+@media (max-width: 320px){
+
+    
 }

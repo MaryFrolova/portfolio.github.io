@@ -5,8 +5,9 @@ logo_card.addEventListener('mouseout', stopRotate);
 function startRotate (event) { 
     const cardImg = this.querySelector('.logo-img');
     const halfHeight = cardImg.offsetHeight / 2;
+    const halfWidth = cardImg.offsetWidth / 2;
 
-    cardImg.style.transform = 'rotateX('+ - (event.offsetY - halfHeight) / 3 +'deg) rotateY('+ (event.offsetX - halfHeight) / 3 +'deg)';
+    cardImg.style.transform = 'rotateX('+ - (event.offsetY - halfHeight) / 3 +'deg) rotateY('+ (event.offsetX - halfWidth) / 3 +'deg)';
  }
 
  function stopRotate (event) {
@@ -16,7 +17,7 @@ function startRotate (event) {
 
  
 
-const skill_card = document.querySelectorAll('.skills');
+/*const skill_card = document.querySelectorAll('.skills');
 
 for (let i = 0; i < skill_card.length; i++){
     const card = skill_card[i];
@@ -25,13 +26,14 @@ for (let i = 0; i < skill_card.length; i++){
 }
 
 function startRotateSkill (event) { 
-    const cardSkill = this.querySelector('.skill');
+    const cardSkill = this.querySelectorAll('.skill');
     const halfHeight = cardSkill.offsetHeight / 2;
+    const halfWidth = cardSkill.offsetWidth / 2;
 
-    cardSkill.style.transform = 'rotateX('+ - (event.offsetY - halfHeight) / 3 +'deg) rotateY('+ (event.offsetX - halfHeight) / 3 +'deg)';
+    cardSkill.style.transform = 'rotateX('+ - (event.offsetY - halfHeight) / 3 +'deg) rotateY('+ (event.offsetX - halfWidth) / 3 +'deg)';
  }
 
  function stopRotateSkill (event) {
     const cardSkill = this.querySelector('.skill');
     cardSkill.style.transform = 'rotate(0)';
- }
+ }*/
